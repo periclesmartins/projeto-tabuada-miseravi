@@ -1,49 +1,124 @@
 @charset 'UTF-8';
 
-html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    background: linear-gradient(to bottom, #5f3e00, #c07d00);
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: Arial, Helvetica, sans-serif;
+/* Estilos para desktop */
+
+/* Define a largura máxima do conteúdo */
+@media only screen and (min-width: 768px) {
+    body {
+        max-width: 800px;
+        margin: 0 auto;
+    }
 }
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    font-size: 16px;
+}
+
+/* Estilos para o cabeçalho */
 header {
-    padding: 40px;
-    color: #ffffff;
-    text-align: center;
-    text-shadow: 3px 3px 10px #00000079;
-    font-size: 1.3em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1c1e26;
+    color: #fff;
+    position: relative;
+    border-radius: .5rem;
 }
+
+#title {
+    font-size: 32px;
+    margin: 0;
+    text-shadow: 2px 2px #000;
+}
+
 audio {
     width: 250px;
+    height: 50px;
 }
+
 #creditos {
+    font-size: 14px;
     margin: 0;
-    padding: 0;
-    font-size: .6em;
 }
-section {
-    background-color: #e2e2e2;
-    font-size: 1.3em;
-    border-radius: 10px;
-    padding: 15px;
-    width: 80vw;
-    margin: auto;
-    text-align: center;
-    box-shadow: 5px 5px 10px #0000003f;
-}
-a {
-    color: #ffffff;
-    text-align: center;
-    text-decoration: none;
-}
-a:hover {
+
+#creditos a {
+    color: #fff;
     text-decoration: underline;
 }
+
+/* Estilos para a seção da tabuada */
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px auto;
+    max-width: 800px;
+}
+
+div:nth-of-type(1) {
+    margin-right: 20px;
+}
+
+p {
+    margin: 0;
+}
+
+input[type="number"] {
+    width: 95%;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+input[type="button"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #1c1e26;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+select {
+    width: 100%;
+    height: 300px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+option {
+    padding: 10px;
+}
+
+/* Estilos para o rodapé */
 footer {
-    color: #ffffff;
     text-align: center;
-    font-style: italic;
+    padding: 20px;
+    background-color: #1c1e26;
+    color: #fff;
+    border-radius: .5rem;
+    margin-top: auto;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #cecece;
+}
+
+footer p {
+    margin-bottom: 10px;
 }
