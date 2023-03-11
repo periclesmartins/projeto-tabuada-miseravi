@@ -27,13 +27,18 @@ header {
     background-color: #1c1e26;
     color: #fff;
     position: relative;
-    border-radius: .5rem;
+    border-radius: 10px;
 }
 
 #title {
     font-size: 32px;
     margin: 0;
     text-shadow: 2px 2px #000;
+}
+
+.botao-e-campo-de-texto {
+    text-align: center;
+    margin: 5px;
 }
 
 audio {
@@ -56,7 +61,7 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 50px auto;
+    margin: 10px auto;
     max-width: 800px;
 }
 
@@ -69,7 +74,7 @@ p {
 }
 
 input[type="number"] {
-    width: 95%;
+    width: 190px;
     padding: 10px;
     font-size: 20px;
     border: none;
@@ -78,9 +83,8 @@ input[type="number"] {
 }
 
 input[type="button"] {
-    width: 100%;
-    padding: 10px;
-    background-color: #1c1e26;
+    padding: 20px;
+    background-color: #000d41;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -97,7 +101,11 @@ select {
 }
 
 option {
-    padding: 10px;
+    padding: 20px;
+}
+
+.resultado {
+    margin: auto;
 }
 
 /* Estilos para o rodapé */
@@ -106,8 +114,7 @@ footer {
     padding: 20px;
     background-color: #1c1e26;
     color: #fff;
-    border-radius: .5rem;
-    margin-top: auto;
+    border-radius: 10px;
 }
 
 footer a {
@@ -116,7 +123,7 @@ footer a {
 }
 
 footer a:hover {
-    color: #cecece;
+    text-decoration: underline;
 }
 
 footer p {
